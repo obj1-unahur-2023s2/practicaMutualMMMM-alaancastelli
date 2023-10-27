@@ -1,0 +1,24 @@
+import socios.*
+import actividades.*
+
+describe "test de socios"{
+	const Alan = new Socios(actividadRealizadas=[], maximoDeActividades= 3)
+	const SanBernardo = new ViajeDePlaya (idioma = {"espanol"},largoDeLaPlaya =3000)
+	
+	
+	test "suma actividades realizadas" {
+		Alan.sumarActividad(SanBernardo)
+		Alan.sumarActividad(SanBernardo)
+		Alan.sumarActividad(SanBernardo)
+		assert.equals(Alan.actividadRealizadas().size(),3)
+	}
+	test "suma actividades realizadas" {
+		Alan.sumarActividad(SanBernardo)
+		Alan.sumarActividad(SanBernardo)
+		Alan.sumarActividad(SanBernardo)
+		Alan.sumarActividad(SanBernardo)
+		Alan.sumarActividad(SanBernardo)
+		assert.equals(Alan.actividadRealizadas().size(),3)
+	}
+
+}
